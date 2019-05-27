@@ -5,9 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:IDM"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="IDM" Height="544.398" Width="879.511">
     <Grid>
-        <Label Content="Hello World" HorizontalAlignment="Left" Margin="234,126,0,0" VerticalAlignment="Top" Height="88" Width="281" FontWeight="Bold" FontSize="48" RenderTransformOrigin="0.483,0.469"/>
+        <Menu Margin="0,0,10,487" Background="DarkGray">
+            <MenuItem Header="File">
+                <MenuItem Header="New Download"/>
+                <MenuItem Header="New Video Download"/>
+                <MenuItem Header="New batch Download"/>
+                <MenuItem Header="Import from file"/>
+                <MenuItem Header="Exit"/>
+            </MenuItem>
+            <MenuItem Header="Edit">
+                <MenuItem Header="New Download"/>
+                <MenuItem Header="New Video Download"/>
+                <MenuItem Header="New batch Download"/>
+                <MenuItem Header="Import from file"/>
+                <MenuItem Header="Exit"/>
+            </MenuItem>
+            <MenuItem Header="View">
+                <MenuItem Header="New Download"/>
+                <MenuItem Header="New Video Download"/>
+                <MenuItem Header="New batch Download"/>
+                <MenuItem Header="Import from file"/>
+                <MenuItem Header="Exit"/>
+            </MenuItem>
+            <MenuItem Header="Help">
+                <MenuItem Header="New Download"/>
+                <MenuItem Header="New Video Download"/>
+                <MenuItem Header="New batch Download"/>
+                <MenuItem Header="Import from file"/>
+                <MenuItem Header="Exit"/>
+            </MenuItem>
+        </Menu>
 
     </Grid>
 </Window>
