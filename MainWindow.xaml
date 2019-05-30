@@ -23,9 +23,9 @@
                 <MenuItem Header="Options.."/>
             </MenuItem>
             <MenuItem Header="View">
-                <MenuItem Header="Segments"/>
-                <MenuItem Header="Toolbar"/>
-                <MenuItem Header="Grid"/>
+                <MenuItem IsCheckable="true" Header="Segments"/>
+                <MenuItem IsCheckable="true" Header="Toolbar"/>
+                <MenuItem IsCheckable="true" Header="Grid"/>
                 
             </MenuItem>
             <MenuItem Header="Help">
