@@ -1,0 +1,33 @@
+﻿<Window x:Class="IDM.UI.NewDownLoad"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IDM.UI"
+        mc:Ignorable="d"
+        Title="New DownLoad" Height="450" Width="800">
+    <Grid>
+        <TabControl>
+            <TabItem Header="General">
+
+                <TabPanel>
+                    <Label Content="URL" Name="url_lbl" />
+                    <TextBox x:Name="url_txt" Margin="-132.111,30,-229.111,38" TextChanged="Url_txt_TextChanged"></TextBox>
+                    <CheckBox Content="Login to server" Height="96" Margin="-534,63,406,-63" VerticalAlignment="Top" Checked="CheckBox_Checked"/>
+                    <Label Content="LogIn" Name="login_lbl" />
+
+                    <TextBox Height="23" TextWrapping="Wrap" Text="TextBox" Width="120"/>
+                    <Label Content="Password" Name="pwd_lbl" />
+
+                    <TextBox Height="23" TextWrapping="Wrap" Text="TextBox" Width="120"/>
+
+
+                </TabPanel>
+            </TabItem>
+            <TabItem Header="Alternate URL" >
+
+            </TabItem>
+
+        </TabControl>
+    </Grid>
+</Window>

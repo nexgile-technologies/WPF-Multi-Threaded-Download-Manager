@@ -10,26 +10,27 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-using IDM.UI;
 
-namespace IDM
+namespace IDM.UI
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for NewDownLoad.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class NewDownLoad : Window
     {
-        public MainWindow()
+        public NewDownLoad()
         {
             InitializeComponent();
         }
 
-        private void NewDownload_Click(object sender, RoutedEventArgs e)
+        private void CheckBox_Checked(object sender, RoutedEventArgs e)
         {
-            NewDownLoad newDownloadWindow = new NewDownLoad();
-            newDownloadWindow.Show();
+
+        }
+
+        private void Url_txt_TextChanged(object sender, TextChangedEventArgs e)
+        {
 
         }
     }

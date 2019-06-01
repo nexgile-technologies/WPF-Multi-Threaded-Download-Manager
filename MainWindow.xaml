@@ -8,8 +8,8 @@
         Title="IDM" Height="544.398" Width="879.511">
     <Grid>
         <Menu Margin="0,0,10,487" Background="DarkGray">
-            <MenuItem Header="File">
-                <MenuItem Header="New Download"/>
+            <MenuItem Name="File_Menu" Header="File">
+                <MenuItem Header="New Download" Click="MenuItem_Click"/>
                 <MenuItem Header="New Video Download"/>
                 <MenuItem Header="New batch Download"/>
                 <MenuItem Header="Import from file"/>
