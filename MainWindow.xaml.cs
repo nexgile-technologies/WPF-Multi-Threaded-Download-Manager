@@ -28,9 +28,15 @@ namespace IDM
 
         private void NewDownload_Click(object sender, RoutedEventArgs e)
         {
-            NewDownLoad newDownloadWindow = new NewDownLoad();
-            newDownloadWindow.Show();
+            NewDownLoad NewDownloadWindow = new NewDownLoad();
+            NewDownloadWindow.Show();
 
+        }
+        
+        private void NewVideoDownload_Click(object sender, RoutedEventArgs e)
+        {
+            NewVideoDownload NewVideoDownloadWindow = new NewVideoDownload();
+            NewVideoDownloadWindow.Show();
         }
     }
 }

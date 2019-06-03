@@ -12,14 +12,14 @@
 
                 <TabPanel>
                     <Label Content="URL" Name="url_lbl" />
-                    <TextBox x:Name="url_txt" Margin="-132.111,30,-229.111,38" TextChanged="Url_txt_TextChanged"></TextBox>
-                    <CheckBox Content="Login to server" Height="96" Margin="-534,63,406,-63" VerticalAlignment="Top" Checked="CheckBox_Checked"/>
-                    <Label Content="LogIn" Name="login_lbl" />
+                    <TextBox x:Name="url_txt" Margin="-95.222,26,-192.222,42" TextChanged="Url_txt_TextChanged_1"></TextBox>
+                    <CheckBox Content="Login to server" Height="93" Margin="-493,57,365,-57" VerticalAlignment="Top" Checked="CheckBox_Checked"/>
+                    <Label Content="LogIn" Name="log_lbl" Height="27" VerticalAlignment="Top" Margin="0,0,106,0" />
 
-                    <TextBox Height="23" TextWrapping="Wrap" Text="TextBox" Width="120"/>
-                    <Label Content="Password" Name="pwd_lbl" />
+                    <TextBox Height="23" TextWrapping="Wrap" Text="TextBox" Width="120" Margin="-34.666,98,34.666,-28"/>
+                    <Label Content="Password" Name="pwd_lbl" Margin="0,0,0,66" />
 
-                    <TextBox Height="23" TextWrapping="Wrap" Text="TextBox" Width="120"/>
+                    <TextBox Height="23" TextWrapping="Wrap" Text="TextBox" Width="120" TextChanged="TextBox_TextChanged" Margin="95.75,-23,22,93"/>
 
 
                 </TabPanel>

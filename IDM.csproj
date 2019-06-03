@@ -57,6 +57,9 @@
     <Compile Include="UI\NewDownLoad.xaml.cs">
       <DependentUpon>NewDownLoad.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UI\NewVideoDownload.xaml.cs">
+      <DependentUpon>NewVideoDownload.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -70,6 +73,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="UI\NewDownLoad.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\NewVideoDownload.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
