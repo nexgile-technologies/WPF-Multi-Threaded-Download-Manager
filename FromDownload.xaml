@@ -1,0 +1,21 @@
+﻿<Window x:Class="IDM.FromDownload"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IDM"
+        mc:Ignorable="d"
+        Title="FromDownload" Height="186.925" Width="526">
+    <Grid Margin="0,0,2,3">
+        <Label Content="Address :" HorizontalAlignment="Left" Margin="10,9,0,0" VerticalAlignment="Top" Width="64"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="85,9,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="390" IsReadOnly="True"/>
+        <Label Content="Path :" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" Width="51"/>
+        <TextBox x:Name="txtPath" HorizontalAlignment="Left" Height="23" Margin="85,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="390"/>
+        <ProgressBar x:Name="ProgressBar" HorizontalAlignment="Left" Height="17" Margin="85,81,0,0" VerticalAlignment="Top" Width="390"/>
+        <Label Content="Downloaded 0%" HorizontalAlignment="Left" Margin="243,103,0,0" VerticalAlignment="Top" Width="69"/>
+        <Button x:Name="btnStart" Content="Start" HorizontalAlignment="Left" Margin="354,127,0,0" VerticalAlignment="Top" Width="54"/>
+        <Button x:Name="btnStop" Content="Stop" HorizontalAlignment="Left" Margin="422,127,0,0" VerticalAlignment="Top" Width="53"/>
+        <Button x:Name="btnBrowse" Content="...." HorizontalAlignment="Left" Margin="479,53,0,0" VerticalAlignment="Top" Width="17" Height="23"/>
+
+    </Grid>
+</Window>

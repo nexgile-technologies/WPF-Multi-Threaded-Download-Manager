@@ -12,21 +12,28 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace IDM.UI
+namespace IDM
 {
     /// <summary>
-    /// Interaction logic for NewVideoDownload.xaml
+    /// Interaction logic for Home.xaml
     /// </summary>
-    public partial class NewVideoDownload : Window
+    public partial class Home : Window
     {
-        public NewVideoDownload()
+        public Home()
         {
             InitializeComponent();
         }
 
-        private void URL_txt_TextChanged(object sender, TextChangedEventArgs e)
+        private void Url_Click(object sender, RoutedEventArgs e)
         {
-
+            AddUrl AddUrl = new AddUrl();
+            AddUrl.Show();
+        }
+       
+             private void Setting_Click(object sender, RoutedEventArgs e)
+        {
+            Setting Setting = new Setting();
+            Setting.Show();
         }
     }
 }

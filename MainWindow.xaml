@@ -10,7 +10,7 @@
         <Menu Margin="0,0,10,487" Background="DarkGray">
             <MenuItem Name="File_Menu" Header="File">
                 <MenuItem Header="New Download" Click="NewDownload_Click"/>
-                <MenuItem Header="New Video Download"  Click="NewVideoDownload_Click"/>
+                <MenuItem Header="New Video Download"/>
                 <MenuItem Header="New batch Download"/>
                 <MenuItem Header="Import from file"/>
                 <MenuItem Header="Exit"/>
@@ -34,6 +34,7 @@
                 <MenuItem Header="About"/>
             </MenuItem>
         </Menu>
+        <Button Content="Home" HorizontalAlignment="Left" Margin="382,148,0,0" VerticalAlignment="Top" Width="76" Click="Button_Click"/>
 
     </Grid>
 </Window>

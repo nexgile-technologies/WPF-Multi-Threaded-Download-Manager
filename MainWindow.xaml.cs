@@ -33,10 +33,13 @@ namespace IDM
 
         }
         
-        private void NewVideoDownload_Click(object sender, RoutedEventArgs e)
+   
+
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            NewVideoDownload NewVideoDownloadWindow = new NewVideoDownload();
-            NewVideoDownloadWindow.Show();
+            Home home = new Home();
+            home.Show();
+
         }
     }
 }
