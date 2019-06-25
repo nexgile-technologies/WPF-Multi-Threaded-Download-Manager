@@ -21,6 +21,13 @@ namespace IDM
     {
         public AddUrl()
         {
+            InitializeComponent();
+        }
+
+        public string Url { get; set; }
+        private void BtnOK_Click(object sender, RoutedEventArgs e)
+        {
+            this.Url = txtURL.Text;
         }
     }
 }

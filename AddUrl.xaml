@@ -5,12 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:IDM"
         mc:Ignorable="d"
-        Title="AddUrl" Height="162.907" Width="466">
-    <Grid HorizontalAlignment="Left" Width="456" Margin="0,0,0,55">
+        Title="AddUrl" Height="143.142" Width="519.208">
+    <Grid>
         <Label Content="URL :" HorizontalAlignment="Left" Margin="8,10,0,0" VerticalAlignment="Top" Height="29" Width="40"/>
-        <TextBox HorizontalAlignment="Left" Height="25" Margin="54,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="332"/>
-        <Button Content="OK" HorizontalAlignment="Left" Margin="391,10,0,0" VerticalAlignment="Top" Width="56" Height="22"/>
+        <TextBox x:Name="txtURL" HorizontalAlignment="Left" Height="25" Margin="54,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="332"/>
+        <Button Content="OK" HorizontalAlignment="Left" Margin="391,10,0,0" VerticalAlignment="Top" Width="56" Height="22" Click="BtnOK_Click"/>
         <Button Content="cancel" HorizontalAlignment="Left" Margin="330,51,0,0" VerticalAlignment="Top" Width="56" Height="22"/>
-
     </Grid>
 </Window>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IDM
 {
-    static class IDMApp
+    static class    IDMApp
     {
         static Database db;
         public static Database DB

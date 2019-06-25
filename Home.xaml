@@ -8,8 +8,19 @@
         Title="Home" Height="450" Width="800">
     <Grid>
         <Button Content="URL" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="76" Click="Url_Click"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="172,10,0,0" VerticalAlignment="Top" Width="76"/>
-        <Button Content="Setting" HorizontalAlignment="Left" Margin="91,10,0,0" VerticalAlignment="Top" Width="76" Click="Setting_Click"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="155,10,0,0" VerticalAlignment="Top" Width="76"/>
+        <Button Content="Setting" HorizontalAlignment="Left" Margin="74,10,0,0" VerticalAlignment="Top" Width="76" Click="Setting_Click"/>
+        <ListView x:Name="File_List" HorizontalAlignment="Left" Height="384" Margin="0,35,0,0" VerticalAlignment="Top" Width="792" SelectionChanged="ListView_SelectionChanged" Grid.ColumnSpan="2">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="#" Width="60"/>
+                    <GridViewColumn Header="URL" Width="350"/>
+                    <GridViewColumn Header="File Name" Width="60" />
+                    <GridViewColumn Header="Size" Width="60" />
+                    <GridViewColumn Header="DateTime" Width="60" />
+                </GridView>
+            </ListView.View>
+        </ListView>
 
     </Grid>
 </Window>

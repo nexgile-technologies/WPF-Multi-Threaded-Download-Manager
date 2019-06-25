@@ -8,9 +8,9 @@
         Title="Setting" Height="117.242" Width="644.28" WindowStartupLocation="CenterScreen">
     <Grid Margin="0,0,0,23">
         <Label Content="Path :" HorizontalAlignment="Left" Margin="14,6,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtPath" HorizontalAlignment="Left" Height="23" Margin="53,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="531"/>
-        <Button x:Name="btnSave" Content="save" HorizontalAlignment="Left" Margin="509,38,0,0" VerticalAlignment="Top" Width="75" AutomationProperties.Name="btnSave"/>
-        <Button x:Name="btnBrowse" Content="..." HorizontalAlignment="Left" Margin="589,10,0,0" VerticalAlignment="Top" Width="17" RenderTransformOrigin="1.347,-0.3" Height="22" AutomationProperties.Name="btnBrowse"/>
+        <TextBox x:Name="txtPath" HorizontalAlignment="Left" Height="23" Margin="53,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="531"/>
+        <Button x:Name="btnSave" Content="save" HorizontalAlignment="Left" Margin="509,38,0,0" VerticalAlignment="Top" Width="75" AutomationProperties.Name="btnSave" Click="BtnSave_Click"/>
+        <Button x:Name="btnBrowse" Content="..." HorizontalAlignment="Left" Margin="589,10,0,0" VerticalAlignment="Top" Width="17" RenderTransformOrigin="1.347,-0.3" Height="22" AutomationProperties.Name="btnBrowse" Click="BtnBrowse_Click"/>
 
     </Grid>
 </Window>

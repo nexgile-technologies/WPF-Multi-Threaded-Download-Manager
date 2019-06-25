@@ -5,17 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:IDM"
         mc:Ignorable="d"
-        Title="FromDownload" Height="186.925" Width="526">
-    <Grid Margin="0,0,2,3">
+        Title="FromDownload" Height="187.955" Width="570.262">
+    <Grid Margin="0,0,2,3" Loaded="Grid_Loaded">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="331*"/>
+            <ColumnDefinition Width="229*"/>
+        </Grid.ColumnDefinitions>
+
         <Label Content="Address :" HorizontalAlignment="Left" Margin="10,9,0,0" VerticalAlignment="Top" Width="64"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="85,9,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="390" IsReadOnly="True"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="85,9,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="390" IsReadOnly="True" Grid.ColumnSpan="2"/>
         <Label Content="Path :" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" Width="51"/>
-        <TextBox x:Name="txtPath" HorizontalAlignment="Left" Height="23" Margin="85,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="390"/>
-        <ProgressBar x:Name="ProgressBar" HorizontalAlignment="Left" Height="17" Margin="85,81,0,0" VerticalAlignment="Top" Width="390"/>
-        <Label Content="Downloaded 0%" HorizontalAlignment="Left" Margin="243,103,0,0" VerticalAlignment="Top" Width="69"/>
-        <Button x:Name="btnStart" Content="Start" HorizontalAlignment="Left" Margin="354,127,0,0" VerticalAlignment="Top" Width="54"/>
-        <Button x:Name="btnStop" Content="Stop" HorizontalAlignment="Left" Margin="422,127,0,0" VerticalAlignment="Top" Width="53"/>
-        <Button x:Name="btnBrowse" Content="...." HorizontalAlignment="Left" Margin="479,53,0,0" VerticalAlignment="Top" Width="17" Height="23"/>
+        <TextBox x:Name="txtPath" HorizontalAlignment="Left" Height="23" Margin="85,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="390" Grid.ColumnSpan="2"/>
+        <ProgressBar x:Name="ProgressBar" HorizontalAlignment="Left" Height="17" Margin="85,81,0,0" VerticalAlignment="Top" Width="390" Grid.ColumnSpan="2"/>
+        <Label x:Name="lblStatus" Content="Downloaded 0%" HorizontalAlignment="Left" Margin="227,103,0,0" VerticalAlignment="Top" Width="113" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnStart" Content="Start" HorizontalAlignment="Left" Margin="23.46,109,0,0" VerticalAlignment="Top" Width="54" Click="BtnStart_Click" Grid.Column="1"/>
+        <Button x:Name="btnStop" Content="Stop" HorizontalAlignment="Left" Margin="91.46,109,0,0" VerticalAlignment="Top" Width="53" Click="BtnStop_Click" Grid.Column="1"/>
+        <Button x:Name="btnBrowse" Content="...." HorizontalAlignment="Left" Margin="158.46,53,0,0" VerticalAlignment="Top" Width="17" Height="23" Click="BtnBrowse_Click" Grid.Column="1"/>
 
     </Grid>
 </Window>
