@@ -8,13 +8,13 @@ namespace IDM
 {
     static class    IDMApp
     {
-        static Database db;
-        public static Database DB
+        static DataBase db;
+        public static DataBase DB
             {
             get
             {
                 if (db == null)
-                    db = new Database();
+                    db = new DataBase();
                 return db;
             }
 }

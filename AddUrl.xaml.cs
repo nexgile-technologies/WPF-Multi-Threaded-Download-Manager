@@ -28,6 +28,7 @@ namespace IDM
         private void BtnOK_Click(object sender, RoutedEventArgs e)
         {
             this.Url = txtURL.Text;
+            this.Close();
         }
     }
 }

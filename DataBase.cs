@@ -1,5 +1,9 @@
 ﻿namespace IDM
 {
+}
+
+namespace IDM
+{
 
 
     partial class Database

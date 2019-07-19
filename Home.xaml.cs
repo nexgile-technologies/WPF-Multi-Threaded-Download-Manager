@@ -23,11 +23,17 @@ namespace IDM
         {
             InitializeComponent();
         }
-
         private void Url_Click(object sender, RoutedEventArgs e)
         {
             AddUrl AddUrl = new AddUrl();
-            AddUrl.Show();
+         AddUrl.ShowDialog();
+            if (!string.IsNullOrWhiteSpace(AddUrl.Url))
+            {
+                FromDownload frmDownload = new FromDownload(this);
+                frmDownload.Url = AddUrl.Url;
+                frmDownload.Show();
+
+            }
         }
        
              private void Setting_Click(object sender, RoutedEventArgs e)

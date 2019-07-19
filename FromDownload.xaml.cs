@@ -25,6 +25,8 @@ namespace IDM
         {
             InitializeComponent();
             _frmHome = frm;
+            txtUrl.Text = Url;
+             txtPath.Text= Properties.Settings.Default.Path;
         }
 
         private void BtnStart_Click(object sender, RoutedEventArgs e)
@@ -71,7 +73,7 @@ namespace IDM
 
         private void Client_DownloadFileCompleted(object sender, System.ComponentModel.AsyncCompletedEventArgs e)
         {
-            Database.FilesRow row = IDMApp.DB.Files.NewFilesRow();
+            DataBase.FilesRow row = IDMApp.DB.Files.NewFilesRow();
             row.Url = Url;
             row.FileName = FileName;
             row.FileSize = (string.Format("{0:0.##} KB", FileSize / 1024));
